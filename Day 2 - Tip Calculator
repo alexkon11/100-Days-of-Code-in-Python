@@ -1,0 +1,26 @@
+This program asks for user input and calculates how much the bill is split into.
+
+----------------------------------------------------------------------------------------------
+#Welcome greeting print function
+print("Welcome to the tip calculator!")
+
+#Requesting user input for total open.
+total_bill = input("What is the total bill?")
+
+#Requesting user input for tip %
+tip = input("How much tip would you like to give? 10, 12, or 15?")
+
+#Requesting user input for how many people to split the bill for.
+split = input("How many people to split the bill?")
+
+#tip has to be converted from string to int to make the calculations.
+tip = (int(tip) * 0.01) + 1
+
+#type converstion for total_ill and split to calculate the tip
+bill_tip = (float(total_bill) / int(split)) * tip
+
+#Rounding to 2 decimals.
+bill_tip = round(bill_tip, 2)
+
+#print statement letting user know how much each user should pay.
+print(f"Each person should pay: ${bill_tip}")
