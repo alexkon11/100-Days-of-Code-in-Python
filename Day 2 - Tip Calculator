@@ -4,7 +4,7 @@ This program asks for user input and calculates how much the bill is split into.
 #Welcome greeting print function
 print("Welcome to the tip calculator!")
 
-#Requesting user input for total open.
+#Requesting user input for total.
 total_bill = input("What is the total bill?")
 
 #Requesting user input for tip %
